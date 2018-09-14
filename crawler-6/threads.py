@@ -51,7 +51,7 @@ class geturl(threading.Thread):
             #构架各页url
             url = "http://weixin.sogou.com/weixin?type=2&query="+keycode+"&page=" +str(page)
             #print(url)
-            data1 = use_proxy(proxy, url)
+            data1 = use_proxy(self.proxy, url)
             #获取文章链接正则表达式
             listurlpat = '<div class="img-box".*?(http://.*?)"'
             #将每个链接加入listurl
@@ -97,7 +97,7 @@ class getcontent(threading.Thread):
         while(True):
             try:
                 url = self.urlqueue.get()
-                data = use_proxy(proxy, url)
+                data = use_proxy(self.proxy, url)
                 #文章标题正则
                 titlepat = '<title>(.*?)</title>'
                 #文章内容正则
@@ -149,7 +149,7 @@ proxy = "61.138.33.20:808"
 proxy2 = "118.190.199.55:80"
 #爬取页规定
 pagestart = 1
-pageend = 10
+pageend = 2
 #创建线程1启动线程1
 t1 = geturl(key,pagestart,pageend,proxy,urlqueue)
 t1.start()
