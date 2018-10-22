@@ -15,3 +15,4 @@ class ScrapylearnItem(scrapy.Item):
     urlkey = scrapy.Field()
     urlcr = scrapy.Field()
     urladdr = scrapy.Field()
+    key = scrapy.Field()
