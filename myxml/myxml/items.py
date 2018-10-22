@@ -8,10 +8,12 @@
 import scrapy
 
 
-class ScrapylearnItem(scrapy.Item):
+class MyxmlItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    urlname = scrapy.Field()
-    urlkey = scrapy.Field()
-    urlcr = scrapy.Field()
-    urladdr = scrapy.Field()
+    #存储植物名称
+    COMMON = scrapy.Field()
+    #存储价格
+    PRICE = scrapy.Field()
+    #存储培养方法
+    LIGHT = scrapy.Field()
