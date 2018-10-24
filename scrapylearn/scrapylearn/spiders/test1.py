@@ -29,8 +29,9 @@ class Test1Spider(scrapy.Spider):
     def parse(self, response):
 
         item = ScrapylearnItem()
-        item['urlname'] = response.xpath("/html/head/title/text()")
+        item['urlname'] = response.xpath("/html/head/title/text()").extract()
         item['key'] = response.xpath("//meta[@name = 'keywords']/@content").extract()
+        print(item['key'])
         #print("以下将显示爬取网站的标题")
         #print(item['urlname'],item['key'])
         #print(response.xpath())

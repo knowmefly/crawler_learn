@@ -15,9 +15,9 @@ class ScrapylearnPipeline(object):
     def process_item(self, item, spider):
         #设置每行内容
         print(dict(item))
-        lines = dict(item)
-        #print(lines)
-        self.file.write(lines)
+        i = json.dumps(dict(item), ensure_ascii=False)
+        line = i + '\n'
+        self.file.write(line)
         return item
         #
         # l = str(item) + '\n'
