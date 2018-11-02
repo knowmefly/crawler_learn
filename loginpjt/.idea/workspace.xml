@@ -51,13 +51,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loginpjt/spiders/loginspd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="210">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
-                <marker date="1541163772554" expanded="true" signature="418:427" ph="..." />
-                <marker date="1541163772554" expanded="true" signature="418:562" ph="..." />
-                <marker date="1541163772554" expanded="true" signature="2170:2212" ph="..." />
+                <marker date="1541163809653" expanded="true" signature="417:426" ph="..." />
+                <marker date="1541163809653" expanded="true" signature="417:561" ph="..." />
+                <marker date="1541163809653" expanded="true" signature="2169:2211" ph="..." />
               </folding>
             </state>
           </provider>
@@ -203,7 +203,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17917548" />
@@ -247,13 +246,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/loginpjt/spiders/loginspd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="210">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-            <marker date="1541163772554" expanded="true" signature="418:427" ph="..." />
-            <marker date="1541163772554" expanded="true" signature="418:562" ph="..." />
-            <marker date="1541163772554" expanded="true" signature="2170:2212" ph="..." />
+            <marker date="1541163809653" expanded="true" signature="417:426" ph="..." />
+            <marker date="1541163809653" expanded="true" signature="417:561" ph="..." />
+            <marker date="1541163809653" expanded="true" signature="2169:2211" ph="..." />
           </folding>
         </state>
       </provider>
