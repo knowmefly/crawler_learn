@@ -18,7 +18,7 @@ def use_proxy(proxy_addr,url):
         opener = request.build_opener(proxy, request.HTTPHandler)
         request.install_opener(opener)
         data = request.urlopen(url).read().decode('utf-8')
-        time.sleep(1)
+        time.sleep(3)
         return data
     except error.URLError as e:
         if hasattr(e, "code"):
@@ -40,11 +40,12 @@ def getlisturl(key,pagestart,pageend,proxy):
             url = "http://weixin.sogou.com/weixin?type=2&query="+keycode+"&page=" +str(page)
             print(url)
             data1 = use_proxy(proxy, url)
-            #print(data1)
+            print(data1)
             #获取文章链接正则表达式
             listurlpat = '<div class="img-box".*?(http://.*?)"'
             #将每个链接加入listurl
             listurl.append(re.compile(listurlpat, re.S).findall(data1))
+            print (listurl)
         print("共找到"+str(len(listurl))+"页")
         return listurl
     except error.URLError as e:
@@ -57,7 +58,7 @@ def getlisturl(key,pagestart,pageend,proxy):
         print("exception:"+str(e))
         time.sleep(1)
 
-通过链接获取相关内容
+#通过链接获取相关内容
 def getcontent(listurl,proxy):
     i = 0
     html1 = '''<html>
@@ -111,9 +112,9 @@ def getcontent(listurl,proxy):
     fh.write(html2.encode('utf-8'))
     fh.close()
 #设置关键词
-key = "外码"
-proxy = "116.1.11.19:80"
-proxy2= "180.76.149.19:8888"
+key = "戏精本精"
+proxy = "115.151.1.144:9999"
+proxy2= "110.52.235.34:9999"
 pagestart = 1
 pageend = 2
 listurl = getlisturl(key,pagestart,pageend,proxy)

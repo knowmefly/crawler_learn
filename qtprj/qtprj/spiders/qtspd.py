@@ -19,6 +19,6 @@ class QtspdSpider(scrapy.Spider):
         item["picid"] = re.compile(patlocal).findall(str(response.body))
         yield item
 
-        for u in range(1,2):
+        for i in range(1,2):
             nexturl = "http://58pic.com/tb/id-"+str(i)+".html"
             yield Request(nexturl, callback=self.parse)

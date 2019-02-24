@@ -8,7 +8,7 @@ from  mycwpjt.items import MycwpjtItem
 class LearnSpider(CrawlSpider):
     name = 'learn'
     allowed_domains = ['sohu.com']
-    start_urls = ['http://news.sohu.com/']
+    start_urls = ['http://sohu.com/']
 
     rules = (
         #Rule(LinkExtractor(allow=r'Items/'), callback='parse_item', follow=True),
