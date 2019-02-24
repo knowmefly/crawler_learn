@@ -10,7 +10,7 @@ import json
 class ScrapylearnPipeline(object):
     #初始化
     def __init__(self):
-        self.file = codecs.open("E:\program_file\python\crawler_learn\scrapylearn\mydata.json", "wb", encoding='utf-8')
+        self.file = codecs.open("mydata.json", "wb", encoding='utf-8')
         print(1)
     def process_item(self, item, spider):
         #设置每行内容
